@@ -15,7 +15,7 @@ io.on('connection', (socket) => {
     io.emit('message', {msg: message.text, user: socket.username, createdAt: new Date()});    
   });
 });
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 3003;
 server.listen(port, function(){
    console.log('listening in http://localhost:' + port);
 });
